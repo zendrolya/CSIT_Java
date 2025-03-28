@@ -15,7 +15,7 @@ public class Main {
     public static void main(String[] args) throws IOException, URISyntaxException {
         TreeMap<Integer, TaskHolder> tasks = TaskFinder.findTasks(PACKAGE);
         for (TaskHolder task : tasks.values()) {
-            System.out.println("Номер задачи: " + task.getId() + ": " + task.getDescriptor());
+            System.out.println("Номер задачи: " + task.getId() + ". " + task.getDescriptor());
         }
 
         try (Scanner scanner = new Scanner(System.in)) {
